@@ -1,0 +1,17 @@
+.btn {
+    background-color: #2f5572;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.85rem 1.15rem;
+    display: inline-block;
+    border-radius: 7px;
+
+    &--orange {
+        background-color: $btnOrange;
+    }
+
+    &--large {
+        font-size: 1.25rem;
+        padding: 1.1rem 1.5rem;
+    }
+}
