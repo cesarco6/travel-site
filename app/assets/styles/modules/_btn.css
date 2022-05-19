@@ -5,13 +5,31 @@
     padding: 0.85rem 1.15rem;
     display: inline-block;
     border-radius: 7px;
+    font-size: 0.95rem;
+    padding: .4rem .65rem;
+   
+    @mixin atMedium {
+        font-size: 1.25rem;
+        padding: .7rem .95rem;
+    }
+    @mixin atLarge {
+        font-size: 1.5rem;
+        padding: .9rem 1.25rem;
+    }
 
     &--orange {
         background-color: $btnOrange;
     }
 
     &--large {
-        font-size: 1.25rem;
-        padding: 1.1rem 1.5rem;
+        font-size: 1.05rem;
+        padding: .5em .75rem;
+
+         @mixin atSmall {
+            font-size: 1.95rem;
+            padding: 1.25rem 1.45rem;
+        }
     }
+
+
 }
