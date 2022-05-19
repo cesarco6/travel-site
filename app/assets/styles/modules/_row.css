@@ -4,12 +4,16 @@
 
     &--gutters {
         margin-right: -65px;
-
+    }
+    &--gutters-wide {
+        margin-right: -100px;
     }
 
     &--gutters > div {
-        padding-right: 65px;
-        box-sizing: border-box;
+        padding-right: 65px;    
+    }
+    &--gutters-wide > div {
+        padding-right: 100px;    
     }
 
     &__b-margin-until-medium {
@@ -26,7 +30,12 @@
         }
         &__medium-4--larger {
             width: 36%;
-        }            
+        }   
+        
+        &__medium-6 {
+            float: left;
+            width: 50%;
+        }
 
         &__medium-8 {
             float: right;
@@ -35,6 +44,8 @@
         &__medium-8--smaller {
             width: 64%;
         }
-    }    
+    }
+
+    
 
 }

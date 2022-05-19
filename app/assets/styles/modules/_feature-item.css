@@ -1,0 +1,21 @@
+.feature-item {
+    position: relative;
+    padding-left: 90px;
+    padding-bottom: 1rem;
+
+    &__icon {
+        position: absolute;
+        width: 2.8rem;
+        left: 10px;
+        top: 25px;
+    }
+
+    &__title {
+        font-size: 1.875rem;
+        font-weight: 300;
+        margin-bottom: 0.8rem;
+    }
+    @mixin atSmall {
+        padding-bottom: 2rem;
+    }
+}
