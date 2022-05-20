@@ -8,19 +8,30 @@
         font-size: 3.75rem;
     }
 
+    &--blue {
+        color: $mainBlue;
+        font-size: 2rem;
+        @mixin atSmall {
+            font-size: 3.5rem;
+        }
+    }
+
+
     strong {
         font-weight: 500;
     }
 
     &__icon {       
-        width: 4.5rem;        
+        width: 4rem;        
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 0.6rem;
 
         @mixin atSmall {
-            width: 5rem;
+            position: relative;
+            top: 10px;
+            width: 4.5rem;
             margin-right: 0.5rem;
             margin-left: 0;
             margin-bottom: -10px;
