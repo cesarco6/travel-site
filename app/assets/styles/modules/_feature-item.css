@@ -19,8 +19,8 @@
     }
 
     &__title {
-        font-size: 1.45rem;
-        font-weight: 400;
+        font-size: 1.65rem;
+        font-weight: 500;
         margin-bottom: 0.5rem;
         margin-top: 0.5rem;
         @mixin atSmall {

@@ -9,12 +9,12 @@
     padding: .4rem .65rem;
    
     @mixin atMedium {
-        font-size: 1.25rem;
-        padding: .7rem .95rem;
+        font-size: 1.2rem;
+        padding: .7rem .85rem;
     }
     @mixin atLarge {
-        font-size: 1.5rem;
-        padding: .9rem 1.25rem;
+        font-size: 1.2rem;
+        padding: .7rem 0.85rem;
     }
 
     &--orange {
@@ -22,12 +22,12 @@
     }
 
     &--large {
-        font-size: 1.05rem;
-        padding: .5em .75rem;
+        font-size: 1rem;
+        padding: .5em .65rem;
 
          @mixin atSmall {
-            font-size: 1.95rem;
-            padding: 1.25rem 1.45rem;
+            font-size: 1.35rem;
+            padding: 0.9rem 0.95rem;
         }
     }
 
