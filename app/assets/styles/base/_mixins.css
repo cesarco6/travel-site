@@ -16,6 +16,7 @@
     }
 }
 
+/* If we do't use float then no-clearfix
 @define-mixin clearfix {
         &::after {
         content: "";
@@ -23,3 +24,4 @@
         display: table;
     }
 }
+*/
