@@ -8,10 +8,14 @@
     &--is-expanded {
         background-color: rgba(45, 85, 115, 0.5);
     }
-
         
     @mixin atMedium {
-        background-color: rgba(45, 85, 115, 0.2);
+        position: fixed;
+        background-color: rgba(45, 85, 115, 0.3);
+        /* background-color: hexa($mainBlue, 0.2); */
+        &--dark {
+            background-color: rgba(23, 51, 72, 0.85);
+        }
     }
 
     &__btn-container {
@@ -25,14 +29,20 @@
         position: absolute;
         top: 0;
         left: 50%;
-        transform: translate(-50%);
+        transition: transform 0.3s ease-out;
+        transform: translate(-50%) scale(0.8);
+        transform-origin: 50% 0;
         background-color: $mainBlue;
         padding: 1rem 1.2rem;
+        border-radius: 7.5%;
 
         @mixin atMedium {
             left: auto;
             transform: translate(0);
-            padding: 1.5rem 2rem;
+            
+            .site-header--dark & {
+                transform: scale(0.69)
+            }
         }
     }
 

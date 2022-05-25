@@ -41,6 +41,10 @@
             padding: 13px 0; 
             font-size: 1.1rem;
             background-color: transparent;
+
+            &.is-current-link {
+                color: $btnOrange;
+            }
         }
     }
 
