@@ -2,7 +2,7 @@ import '../styles/styles.css'
 import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader'
-//import Modal from './modules/Modal'
+import Modal from './modules/Modal'
 
 
 /* section for webpack */
@@ -11,7 +11,7 @@ if(module.hot) {
 }
 
 /* Section for functionality of the page */
-//new Modal()
+new Modal()
 let stickyHeader = new StickyHeader()
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75)
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60)
