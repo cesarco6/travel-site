@@ -3,6 +3,9 @@ import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader'
 import Modal from './modules/Modal'
+import ClientArea from './modules/ClientArea'
+
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 
@@ -13,6 +16,8 @@ if(module.hot) {
 }
 
 /* Section for functionality of the page */
+
+new ClientArea()
 new Modal()
 let stickyHeader = new StickyHeader()
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75)
