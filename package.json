@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,16 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
     "autoprefixer": "^10.2.4",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^5.0.1",
+    "css-minimizer-webpack-plugin": "^4.0.0",
+    "fs-extra": "^10.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
     "postcss": "^8.4.14",
     "postcss-color-hexa": "^1.2.4",
     "postcss-import": "^14.1.0",
