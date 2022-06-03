@@ -3,6 +3,7 @@ import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader'
 import Modal from './modules/Modal'
+import ButtonUp from './modules/StickyUpButton'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
@@ -18,7 +19,7 @@ let stickyHeader = new StickyHeader()
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75)
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60)
 let mobileMenu = new MobileMenu()
-
+new ButtonUp()
 
 
 

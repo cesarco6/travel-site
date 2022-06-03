@@ -20,7 +20,7 @@ class StickyHeader {
   runOnScroll() {
     this.determineScrollDirection()
 
-    if (window.scrollY > 60) {
+    if (window.scrollY > 150) {
       this.siteHeader.classList.add("site-header--dark")
     } else {
       this.siteHeader.classList.remove("site-header--dark")
@@ -40,7 +40,8 @@ class StickyHeader {
   }
 
   calcSection(el) {
-    if (window.scrollY + this.browserHeight > el.offsetTop && window.scrollY < el.offsetTop + el.offsetHeight) {
+    if (window.scrollY + this.browserHeight > el.offsetTop 
+      && window.scrollY < el.offsetTop + el.offsetHeight) {
       let scrollPercent = el.getBoundingClientRect().y / this.browserHeight * 100
       if (scrollPercent < 18 && scrollPercent > -0.1 && this.scrollDirectiondown 
         || scrollPercent < 10 && !this.scrollDirectiondown) {
